@@ -1,0 +1,50 @@
+.funfacts_line {
+    border-top: 1px solid #1d1d1d;
+    border-bottom: 1px solid #1d1d1d;
+}
+
+.funfacts_item {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    @media #{$xs}{
+        height: 100px;     
+    }
+    
+}
+
+.funfacts_item h5 {
+    font-size: 72px;
+    font-weight: 600;
+    margin-right: 60px;
+    @media #{$xs} {
+        font-size: 36px;
+    }
+}
+
+.funfacts_item h5.stroke {
+    -webkit-text-stroke: 0.8px #fff;
+    -webkit-text-fill-color: #000;
+}
+
+.funfacts_item img {
+    display: inline-block;    
+}
+
+h5.slick-slide img {
+    margin-right: 30px;
+}
+
+.light-bg{
+    border: none;
+
+    .funfacts_item h5{
+        color: #000;
+        &.stroke {
+            -webkit-text-stroke: 0.8px #000;
+            -webkit-text-fill-color: #fff;
+        }
+    }
+
+    
+}

@@ -1,0 +1,83 @@
+.single-choose-item  {
+    @media #{$md}{
+        margin-bottom: 60px;
+    }    
+    @media #{$xs}{
+        margin-bottom: 60px;
+    }    
+    span {
+        font-size: 52px;
+        font-weight: 600;
+        -webkit-text-stroke: 0.8px #171717;
+        -webkit-text-fill-color: #fff;
+        
+    }
+    h4 {
+        font-size: 24px;
+        font-weight: 600;
+        color: #0e0e0e;
+        margin: 20px 0;
+        position: relative;
+        z-index: 1;
+        padding-left: 80px;
+        @media #{$xs}{
+            font-size: 20px;            
+        }
+    }
+}
+
+
+
+
+
+.single-choose-item h4:before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 0;
+    width: 60px;
+    height: 2px;
+    background: #444;
+    margin-top: -1px;
+}
+
+// Choose Us # 02
+
+.choose-us-content{
+    @media #{$xs}{
+        margin-top: 60px;
+    }
+}
+
+.single-choose-us-item {
+    border: 1px solid #1d1d1d;
+    border-radius: 10px;
+    padding: 20px 30px;
+    margin-bottom: 20px;
+}
+
+.choose-us-img img {
+    border-radius: 10px;
+}
+
+.choose-icon {
+    width: 45px;
+    height: 45px;
+}
+
+.single-choose-us-item h5 {
+    margin: 25px 0;
+    font-size: 30px;
+    @media #{$md}{
+        margin: 15px 0;
+        font-size: 24px;
+    }
+    @media #{$xs}{
+        margin: 15px 0;
+        font-size: 24px;
+    }
+}
+
+.choose-us-section p {
+    margin-bottom: 0;
+}

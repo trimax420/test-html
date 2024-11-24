@@ -1,0 +1,175 @@
+
+// CP Custom Accordion 
+
+  .cp-custom-accordion .accordion-buttons {    
+    position: relative;
+    width: 100%;
+    padding: 20px 0px 20px 20px;
+    text-align: left;
+    font-weight: 400;
+    font-size: 20px;
+    color: #fff;
+    border: none;
+    border-bottom: 1px solid #1d1d1d;    
+    background: transparent;
+  }
+
+  .cp-custom-accordion .accordion-buttons span {
+    font-size: 15px;
+    margin-right: 15px;
+}
+  
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .cp-custom-accordion .accordion-buttons {
+      padding: 20px 0px 20px 20px;
+    }
+  }
+  @media (max-width: 767px) {
+    .cp-custom-accordion .accordion-buttons {
+      padding-right: 50px;
+      line-height: 25px;
+      font-size: 18px;
+    }
+  }
+
+  .cp-custom-accordion .accordion-buttons::after {
+    position: absolute;
+    content: "\f061";
+    font-family: "Line Awesome Free";
+    top: 35%;
+    transform: rotate(45deg);
+    right: 30px;
+    font-size: 24px;
+    font-weight: 500;
+    opacity: 1;
+    color: #fff;
+  }
+  @media (max-width: 767px) {
+    .cp-custom-accordion .accordion-buttons::after {
+      top: 35px;
+      right: 25px;
+      font-size: 16px;
+    }
+  }
+  .cp-custom-accordion .accordion-buttons.collapsed::after {
+    content: "\f061";
+    transform: rotate(-45deg);
+  }
+  .cp-custom-accordion .collapsed {
+    position: relative;
+    z-index: 9;
+  }
+  .cp-custom-accordion .accordion-body {
+    background-color: transparent;
+    color: $body_text-1;
+    padding: 20px 0 20px 20px;    
+    position: relative;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 28px;
+    z-index: 1;
+  }
+  @media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .cp-custom-accordion .accordion-body {
+      padding-right: 25px;
+      padding-bottom: 0;
+    }
+  }
+  @media only screen and (min-width: 768px) and (max-width: 991px) {
+    .cp-custom-accordion .accordion-body {
+      padding-right: 30px;
+      padding-bottom: 0;
+    }
+  }
+  @media (max-width: 767px) {
+    .cp-custom-accordion .accordion-body {
+      padding-right: 30px;
+      padding-left: 30px;
+    }
+  }
+  
+  .faq-section-bg {
+    max-width: calc(100% - 10px);
+}
+
+.faq-section p{
+  @media #{$xs} {        
+		br{
+      display: none;
+    }
+	}
+}
+
+.cp-custom-accordion {
+  @media #{$md} {        
+		margin-top: 30px;
+	}
+  @media #{$xs} {        
+		margin-top: 30px;
+	}
+}
+
+.faq-img-wrap {
+  position: relative;
+  z-index: 1;
+}
+
+.img-right {
+  position: relative;
+  right: -120px;
+  @media #{$lg}{
+    right: -80px;
+  }
+  @media #{$xs}{
+    right: 0;
+  }
+}
+
+.img-left {
+  position: absolute;
+  bottom: -80px;
+  left: 0;
+  @media #{$xs}{
+    display: none;
+  }
+}
+
+// solution-section
+
+.solution-section{
+  button.btn.btn-link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 400;
+    @media #{$xs}{
+      font-size: 16px;
+    }
+
+}
+
+.card-header {
+    background: #0E0E0E;
+    border-bottom: 1px solid #1d1d1d;
+}
+
+.card {
+    border: 1px solid #1d1d1d;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.card-body {
+    background: #0E0E0E;
+}
+}
+
+.btn.active:focus {
+  box-shadow: none;
+}
+
+.faq-content-wrap{
+  @media #{$xs}{
+    margin-top: 60px;
+  }
+}

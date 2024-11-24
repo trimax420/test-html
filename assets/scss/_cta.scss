@@ -1,0 +1,11 @@
+
+.cta-img img {
+    margin-bottom: -30px;
+    @media #{$md}{
+        margin-bottom: -60px;
+    }
+
+    @media #{$xs}{
+        margin-top: 60px;
+    }
+  }
